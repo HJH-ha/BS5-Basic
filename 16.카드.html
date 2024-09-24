@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+    <title>카드</title>
+  </head>
+
+  <body>
+    <!-- 컨테이너 효과로 양쪽 여백 존재 
+     py-5 < 패딩임 그래서 위아래 여백 존재-->
+    <div class="container py-5">
+      <!-- CARDS TOP IMAGE : 위쪽 이미지 카드-->
+
+      <div class="card">
+        <img src="img/slide1.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">카드 제목</h5>
+          <p class="card-text">카드 내용을 적습니다.</p>
+        </div>
+      </div>
+
+      <br /><br />
+      <hr />
+      <br /><br />
+      <!-- CARDS bottom IMAGE : 아래쪽 카드 이미지-->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">카드 제목</h5>
+          <p class="card-text">카드 내용을 적습니다.</p>
+          <img src="img/slide1.jpg" alt="" class="card-img-top" />
+        </div>
+      </div>
+
+        <br /><br />
+        <hr />
+        <br /><br />
+
+        <!-- 오버레이 카드 (이미지와 글을 겹치게) -->
+        <!-- CARDS OVERLAY IMAGE-->
+
+        <div class="card text-white">
+          <img src="img/slide3.jpg" alt="" class="card-img" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">카드 제목</h5>
+            <p class="card-text">이미지와 오버레이 겹치는 내용</p>
+          </div>
+        </div>
+
+        <br /><br />
+        <hr />
+        <br /><br />
+
+        <!-- 이미지가 없는 심플 카드 -->
+        <div class="card">
+          <div class="card-header">카드 해더</div>
+          <div class="card-body">
+            <h4 class="card-title">카드 제목</h4>
+            <p class="card-text">카드 내용</p>
+          </div>
+          <div class="card-footer">카드 푸터</div>
+        </div>
+
+        <br /><br />
+        <hr />
+        <br /><br />
+
+        <!-- 경고 카드 -->
+        <!-- 부트스트랩사용해도 style이용한 간단한 css사용가능. -->
+
+        <div class="card bg-danger text-white" style="width: 200px">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              rerum asperiores impedit labore iusto optio distinctio autem,
+              doloremque sint maiores!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--  카드 컨테이너 끝 -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+    <title>네브바</title>
+  </head>
+
+  <body>
+    <!-- 네비게이션 바 사이트 상단의 메뉴
+     아이콘 메뉴 검색창 소셜 버튼 등등 
+     bg-dark" data-bs-theme="dark" 같이 써야함
+     원래 있는 이름아는 색깔은 navbar navbar-expand-md 요 뒤에 bg-로 사용
+     그 외 다른 색깔을 쓰고 싶으면 아예 밖에 style 만들어 사용-->
+    <nav
+      class="navbar navbar-expand-md"
+      style="background-color: #a594f9"
+      data-bs-theme="dark"
+    >
+      <!-- fluid 여백 없음 그냥 container 여백 있음
+       -->
+      <div class="container-fluid">
+        <!-- 사이트 제목(아이콘) -->
+        <a class="navbar-brand" href="#">브랜드🌈</a>
+        <!-- 햄버거 버튼(사이즈 이하일때 보임) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 메뉴 부분(사이즈 이하일때 생략됨) -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">홈페이지</a>
+            <a class="nav-link" href="#">오시는길</a>
+            <a class="nav-link" href="#">가격</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+          <!-- 검색 -->
+          <form class="d-flex ms-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="검색..."
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
